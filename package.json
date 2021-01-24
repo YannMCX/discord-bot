@@ -5,6 +5,7 @@
     "main": "src/main.js",
     "scripts": {
         "dev": "clear;pm2 stop discord-bot;pm2 start pm2.config.js --no-daemon --watch",
+        "prod": "clear;pm2 stop discord-bot;pm2 start pm2.config.js",
         "lint": "eslint -c ./.eslintrc.js .",
         "lint:fix": "eslint -c ./.eslintrc.js . --fix"
     },
@@ -30,7 +31,6 @@
         "eslint-plugin-standard": "^5.0.0",
         "opusscript": "0.0.7",
         "winston": "^3.3.3",
-        "express": "4.17.1"
     },
     "devDependencies": {
         "babel-eslint": "^10.1.0",
